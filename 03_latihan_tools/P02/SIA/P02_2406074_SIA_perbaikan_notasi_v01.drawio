@@ -1,0 +1,24 @@
+<mxfile host="65bd71144e">
+    <diagram id="e5KuAe-zP9dObO_v9Cws" name="Page-1">
+        <mxGraphModel dx="595" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="0KzdME-tvSiSVeZTplGU-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=160;" value="Sistem Laboratorium" vertex="1">
+                    <mxGeometry height="530" width="340" x="180" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="0KzdME-tvSiSVeZTplGU-5" parent="0KzdME-tvSiSVeZTplGU-1" style="whiteSpace=wrap;html=1;" value="Kelola jadwal kuliah" vertex="1">
+                    <mxGeometry height="60" width="120" x="160" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="0KzdME-tvSiSVeZTplGU-2" parent="0KzdME-tvSiSVeZTplGU-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Mahasiswa" vertex="1">
+                    <mxGeometry height="60" width="30" x="60" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="0KzdME-tvSiSVeZTplGU-6" edge="1" parent="0KzdME-tvSiSVeZTplGU-1" source="0KzdME-tvSiSVeZTplGU-2" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="0KzdME-tvSiSVeZTplGU-5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

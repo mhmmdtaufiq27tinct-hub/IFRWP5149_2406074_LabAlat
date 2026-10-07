@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="kcXlJzxjg6EyUIWkzcRz" name="Page-1">
+        <mxGraphModel dx="960" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=230;height=50;" value="Sistem Informasi Peminjaman dan pengembalian peralatan laboratorium kampus" vertex="1">
+                    <mxGeometry height="550" width="350" x="200" y="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-9" parent="U_PzMihP6duXLqHWAVrH-1" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;" value="" vertex="1">
+                    <mxGeometry height="90" width="150" x="180" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-10" parent="U_PzMihP6duXLqHWAVrH-9" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;whiteSpace=wrap;" value="Kelola data peralatan" vertex="1">
+                    <mxGeometry height="22.5" width="125" x="12.500000000000002" y="33.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-4" parent="U_PzMihP6duXLqHWAVrH-1" style="shape=ellipse;container=1;horizontal=1;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;html=1;dashed=0;collapsible=0;" value="" vertex="1">
+                    <mxGeometry height="90" width="150" x="10" y="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-5" parent="U_PzMihP6duXLqHWAVrH-4" style="html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rotatable=0;whiteSpace=wrap;" value="Lihat keterdiaan Peralatan" vertex="1">
+                    <mxGeometry height="22.5" width="124.99999999999999" x="12.499999999999998" y="33.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Actor" vertex="1">
+                    <mxGeometry height="60" width="30" x="70" y="295" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Actor" vertex="1">
+                    <mxGeometry height="60" width="30" x="680" y="295" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-11" edge="1" parent="1" source="U_PzMihP6duXLqHWAVrH-9" style="html=1;rounded=1;curved=1;endArrow=none;endFill=0;" target="U_PzMihP6duXLqHWAVrH-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="U_PzMihP6duXLqHWAVrH-15" edge="1" parent="1" source="U_PzMihP6duXLqHWAVrH-4" style="html=1;shape=wire;dashed=1;endArrow=none;endFill=0;" target="U_PzMihP6duXLqHWAVrH-2" value="">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
