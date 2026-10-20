@@ -1,3 +1,5 @@
+# Sistem Informasi Akademik
+### Skenario tugas:
 Mahasiswa mengajukan peminjaman peralatan dengan memilih alat,
 jumlah, dan rentang waktu. Sistem memeriksa ketersediaan. Jika
 tersedia dan data lengkap, sistem menyimpan pengajuan berstatus
@@ -6,6 +8,7 @@ memilih mencetak bukti pengajuan. Petugas mengelola data peralatan
 serta menyetujui atau menolak pengajuan. Kepala laboratorium melihat
 laporan peminjaman.
 ___
+### Tabel Kebutuhan
 | ID | Kebutuhan |
 |:---:|:---|
 | LAB-R01 | Mahasiswa dapat melihat ketersediaan peralatan |
@@ -15,7 +18,7 @@ ___
 | LAB-R05 | Petugas dapat menetapkan persetujuan atau penolakan pengajuan |
 | LAB-R06 | Kepala laboratorium dapat melihat laporan peminjaman |
 ___
-### Batas sistem dan aturan: ###
+### Batas dan asumsi:
 - Sistem mencatat dan menyediakan informasi; perpindahan fisik alat tidak terjadi di dalam perangkat lunak.
 - Pengguna telah terautentikasi dan memiliki hak akses sesuai peran.
 - Pengajuan yang diterima sistem berstatus Menunggu keputusan, bukan otomatis Disetujui.
@@ -24,11 +27,32 @@ ___
 - Persetujuan petugas belum dimodelkan sebagai reservasi teknis stok.
 - Pengambilan, pengembalian, kondisi alat, dan denda belum dianalisis pada potongan model ini.
 ___
-### Kriteria penerimaan model: ###
-semua kebutuhan di atas mempunyai representasi, include dan extend mempunyai alasan yang jelas, serta diagram konsisten dengan deskripsinya.
-___
+### Tentukan Aktor
 | Aktor | Tujuan terhadap sistem |
 |:---:|:---|
 | Mahasiswa | Melihat ketersediaan, mengajukan peminjaman, dan mencetak bukti |
-| Petugas | laboratorium Mengelola peralatan dan memproses keputusan |
+| Petugas laboratorium | Mengelola peralatan dan memproses keputusan |
 | Kepala laboratorium | Melihat laporan peminjaman |
+
+#### Kriteria penerimaan model:
+semua kebutuhan di atas mempunyai representasi, include dan extend mempunyai alasan yang jelas, serta diagram konsisten dengan deskripsinya.
+___
+### Susun Katalog Usecase
+| ID | Nama use case | Peran dalam model |
+|:---:|:---|:---|
+| LAB-UC01 | Lihat ketersediaan peralatan | Fungsi utama mahasiswa |
+| LAB-UC02 | Kelola data peralatan | Fungsi utama petugas |
+| LAB-UC03 | Ajukan peminjaman | Fungsi utama mahasiswa |
+| LAB-UC04 | Periksa ketersediaan | Perilaku yang disertakan UC03 |
+| LAB-UC05 | Cetak bukti pengajuan | Tambahan bersyarat pada UC03 |
+| LAB-UC06 | Proses keputusan peminjaman | Fungsi utama petugas |
+| LAB-UC07 | Lihat laporan peminjaman | Fungsi utama kepala laboratorium |
+___
+### Relasi Include
+#### LAB-UC03 «include» LAB-UC04
+#### Alasan: pemeriksaan menjadi bagian validasi pengajuan.
+___
+### Relasi Extend
+#### Extension point: Bukti pengajuan tersedia.
+#### Kondisi: [mahasiswa memilih cetak].
+#### Alasan: pengajuan tetap berhasil tanpa pencetakan.

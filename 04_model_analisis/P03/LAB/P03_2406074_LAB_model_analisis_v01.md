@@ -1,8 +1,8 @@
 | Sumber | Hubungan | Tujuan |
 |:---:|:---|:---|
-| Mahasiswa Asosiasi | LAB-UC01 |
-| Mahasiswa Asosiasi | LAB-UC03 |
-| Mahasiswa Asosiasi | LAB-UC05 |
+| Mahasiswa | Asosiasi | LAB-UC01 |
+| Mahasiswa | Asosiasi | LAB-UC03 |
+| Mahasiswa | Asosiasi | LAB-UC05 |
 | Petugas laboratorium | Asosiasi | LAB-UC02 |
 | Petugas laboratorium | Asosiasi | LAB-UC06 |
 | Kepala laboratorium | Asosiasi | LAB-UC07 |

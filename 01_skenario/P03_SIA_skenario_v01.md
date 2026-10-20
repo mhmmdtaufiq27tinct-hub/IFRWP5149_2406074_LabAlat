@@ -39,16 +39,34 @@ ___
 |:---:|:---|:---|
 | SIA-UC01 | Lihat Jadwal Kuliah | Fungsi utama Mahasiswa |
 | SIA-UC02 | Ajukan KRS | Fungsi utama Mahasiswa |
-| SIA-UC03 | Validasi KRS sebagai pengajuan | Fungsi Utama Admin Akademik |
-| SIA-UC04 | Unduh Bukti Pengajuan | Tambahan bersyarat pada UC03 |
-| SIA-UC05 | Memproses Persetujuan atau Penolakan KRS | Fungsi utama Dosen Wali |
+| SIA-UC03 | Validasi KRS sebagai pengajuan | Prilaku yang disetakan UC02 |
+| SIA-UC04 | Unduh Bukti Pengajuan | Tambahan bersyarat pada UC02 |
+| SIA-UC05 | Persetujuan atau Penolakan KRS | Fungsi utama Dosen Wali |
+| SIA-UC06 | Kelola Jadwal Kuliah | Fungsi utama Admin |
 ___
 ### Relasi Include
-#### LAB-UC02 «include» LAB-UC03
+
+#### SIA-UC02 «include» SIA-UC03
 ##### Alasan: pemeriksaan menjadi bagian validasi pengajuan.
 ___
 ### Relasi Extend
-#### LAB-UC04 «extend» LAB-UC03
+
+#### SIA-UC01 «extend» SIA-UC05
+##### Extension point: KRS disetujui.
+##### Kondisi: [Mahasiswa memilih Lihat Jadwal Kuliah]
+##### Alasan: Mahasiswa tidak dapat melihat jadwal kuliah sebelum KRS disetujui.
+
+#### SIA-UC06 «extend» SIA-UC05
+##### Extension point: KRS disetujui.
+##### Kondisi: [Admin Akademik memilih Kelola Jadwal Kuliah]
+##### Alasan: Admin Akademik tidak dapat mengelola Jadwal Kuliah sebelum yang belum disetujui. 
+
+#### SIA-UC04 «extend» SIA-UC03
 ##### Extension point: Bukti pengajuan tersedia.
 ##### Kondisi: [mahasiswa memilih unduh].
-##### Alasan: pengajuan tetap berhasil tanpa pengunduhan.
+##### Alasan: agar Mahasiswa dapat mengunduh Bukti pengajuan setelah KRS yang diajukan tersimpan di Sistem.
+
+#### SIA-UC05 «extend» SIA-UC05
+##### Extension point: KRS diajukan untuk validasi.
+##### Kondisi: [mahasiswa memilih Ajukan KRS].
+##### Alasan: KRS harus divalidasi oleh Dosen Wali, ditolak atau diterima.
