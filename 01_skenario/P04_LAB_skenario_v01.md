@@ -39,7 +39,7 @@
 | LAB-UC08 | Tambah Data Peralatan | Baru pada Pertemuan 4; use case KHUSUS dari LAB-UC02 | LAB-R08 |
 | LAB-UC09 | Ubah Data Peralatan | Baru pada Pertemuan 4; use case KHUSUS dari LAB-UC02 | LAB-R08 |
 | LAB-UC10 | Hapus Data Peralatan | Baru pada Pertemuan 4; use case KHUSUS dari LAB-UC02 | LAB-R08 |
-| LAB-UC11 | Catat Pengembalian Peralatan Baru pada Pertemuan 4; fungsi utama petugas; direalisasikan LAB-UC02 | LAB-R09 |
+| LAB-UC11 | Catat Pengembalian Peralatan | Baru pada Pertemuan 4; fungsi utama petugas; direalisasikan LAB-UC02 | LAB-R09 |
 | LAB-UC12 | Periksa Kondisi Peralatan | Baru pada Pertemuan 4; perilaku yang disertakan LAB-UC11 | LAB-R10 |
 
 ## Tetapkan generalization aktor
@@ -67,14 +67,15 @@
 
 ## Alur utama
 | Langkah | Tindakan petugas | Respons sistem |
+|:---:|:---|:---|
 | 1 | Memilih peminjaman yang akan dikembalikan | Menampilkan data peminjaman terpilih dan statusnya |
 | 2 | Mengonfirmasi alat yang kembali dan jumlahnya | Menampung konfirmasi petugas |
 | 3 | Tidak ada Memeriksa status peminjaman harus Dipinjam |
-4 Tidak ada Menjalankan LAB-UC12: memeriksa
-dan mencatat kondisi peralatan
-5 Menyimpan pencatatan
-pengembalian
-Menyimpan tanggal kembali dan
-kondisi; mengubah status peminjaman
-menjadi Selesai
-6 Melihat konfirmasi Menampilkan ringkasan pengembalian
+| 4 | Tidak ada Menjalankan LAB-UC12: memeriksa dan mencatat kondisi peralatan |
+| 5 | Menyimpan pencatatan pengembalian | Menyimpan tanggal kembali dan kondisi; mengubah status peminjaman menjadi Selesai |
+| 6 | Melihat konfirmasi | Menampilkan ringkasan pengembalian |
+
+## Alur alternatif atau pengecualian
+* A1: Status bukan Dipinjam (pada langkah 3): sistem menolak pencatatan dan menampilkan status peminjaman saat ini. Pascakondisi gagal berlaku; tidak ada data yang disimpan.
+* A2: Kondisi Rusak Ringan atau Rusak Berat (pada langkah 4): sistem tetap menyimpan pencatatan, menandai kondisi tersebut pada data peralatan, dan pengembalian tetap tercatat. Kerusakan tidak otomatis menimbulkan denda pada model ini.
+* A3: Jumlah alat yang kembali tidak sesuai (pada langkah 2): sistem meminta petugas memeriksa kembali isian sebelum penyimpanan; pencatatan tidak disimpan sampai jumlah sesuai atau dikoreksi.
