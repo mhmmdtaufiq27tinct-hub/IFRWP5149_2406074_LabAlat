@@ -1,5 +1,5 @@
 ID artefak : 
-Judul : Pengenalan Lingkungan Praktikum dan Kakas Pemodelan UML
+Judul : 
 Pertemuan : 
 Sumber skenario :
 Jenis/status : latihan / draf / telah direview

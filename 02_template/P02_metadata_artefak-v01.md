@@ -1,4 +1,4 @@
-| ID artefak : | LAB-P02-UC |
+| ID artefak : | 02 |
 |:---:|:---|
 | Judul : | Latihan notasi fungsi laboratorium |
 | Pertemuan : | 02 |
