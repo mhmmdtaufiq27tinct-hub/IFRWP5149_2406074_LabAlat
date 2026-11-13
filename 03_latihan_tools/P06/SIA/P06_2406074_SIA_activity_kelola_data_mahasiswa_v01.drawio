@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="723fa49ee16346c7968a0413e4da3188" name="SIA-UC10 Kelola Data Mahasiswa">
+    <mxGraphModel dx="1500" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1150" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="laneA" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;horizontal=1;collapsible=0;" value="Admin Akademik" vertex="1">
+          <mxGeometry as="geometry" x="50" y="50" width="560" height="1070" />
+        </mxCell>
+        <mxCell id="laneS" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;horizontal=1;collapsible=0;" value="Sistem" vertex="1">
+          <mxGeometry as="geometry" x="640" y="50" width="800" height="1070" />
+        </mxCell>
+        <mxCell id="start" parent="laneA" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry as="geometry" x="270" y="90" width="30" height="30" />
+        </mxCell>
+        <mxCell id="a" parent="laneA" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memilih Kelola Data Mahasiswa" vertex="1">
+          <mxGeometry as="geometry" x="100" y="120" width="260" height="70" />
+        </mxCell>
+        <mxCell id="b" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Menampilkan fungsi tambah, ubah, hapus" vertex="1">
+          <mxGeometry as="geometry" x="160" y="230" width="260" height="70" />
+        </mxCell>
+        <mxCell id="d" parent="laneS" style="rhombus;whiteSpace=wrap;html=1;" value="Operasi yang dipilih?" vertex="1">
+          <mxGeometry as="geometry" x="220" y="350" width="160" height="90" />
+        </mxCell>
+        <mxCell id="add" parent="laneA" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Mengisi data mahasiswa baru" vertex="1">
+          <mxGeometry as="geometry" x="70" y="490" width="260" height="70" />
+        </mxCell>
+        <mxCell id="edit" parent="laneA" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memilih dan mengubah data mahasiswa" vertex="1">
+          <mxGeometry as="geometry" x="250" y="490" width="260" height="70" />
+        </mxCell>
+        <mxCell id="del" parent="laneA" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memilih data mahasiswa untuk dihapus" vertex="1">
+          <mxGeometry as="geometry" x="430" y="490" width="260" height="70" />
+        </mxCell>
+        <mxCell id="va" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memvalidasi dan menyimpan data baru" vertex="1">
+          <mxGeometry as="geometry" x="70" y="620" width="260" height="70" />
+        </mxCell>
+        <mxCell id="ve" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memvalidasi dan menyimpan perubahan" vertex="1">
+          <mxGeometry as="geometry" x="250" y="620" width="260" height="70" />
+        </mxCell>
+        <mxCell id="vd" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memeriksa data akademik aktif" vertex="1">
+          <mxGeometry as="geometry" x="430" y="620" width="260" height="70" />
+        </mxCell>
+        <mxCell id="gd" parent="laneS" style="rhombus;whiteSpace=wrap;html=1;" value="Ada data akademik aktif?" vertex="1">
+          <mxGeometry as="geometry" x="450" y="730" width="160" height="90" />
+        </mxCell>
+        <mxCell id="reject" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Menolak penghapusan dan menampilkan alasan" vertex="1">
+          <mxGeometry as="geometry" x="430" y="850" width="260" height="70" />
+        </mxCell>
+        <mxCell id="delete" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Menghapus data mahasiswa" vertex="1">
+          <mxGeometry as="geometry" x="250" y="850" width="260" height="70" />
+        </mxCell>
+        <mxCell id="result" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Menampilkan hasil pengelolaan" vertex="1">
+          <mxGeometry as="geometry" x="220" y="970" width="260" height="70" />
+        </mxCell>
+        <mxCell id="endok" parent="laneS" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry as="geometry" x="270" y="1050" width="36" height="36" />
+        </mxCell>
+        <mxCell id="endno" parent="laneS" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry as="geometry" x="520" y="1050" width="36" height="36" />
+        </mxCell>
+        <mxCell id="e0" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="start" target="a">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e1" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="a" target="b">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e2" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="b" target="d">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e3" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[tambah]" edge="1" source="d" target="add">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e4" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[ubah]" edge="1" source="d" target="edit">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e5" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[hapus]" edge="1" source="d" target="del">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e6" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="add" target="va">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e7" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="edit" target="ve">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e8" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="del" target="vd">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e9" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="vd" target="gd">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e10" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[ada data aktif]" edge="1" source="gd" target="reject">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e11" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[tidak ada data aktif]" edge="1" source="gd" target="delete">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e12" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="va" target="result">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e13" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="ve" target="result">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e14" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="delete" target="result">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e15" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="result" target="endok">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e16" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="reject" target="endno">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

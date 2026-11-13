@@ -1,4 +1,4 @@
-# Sistem Informasi Akademik
+# Sistem Informasi Peminjaman dan Pengembalian Peralatan Laboratorium Kampus
 ### Skenario tugas:
 Mahasiswa mengajukan peminjaman peralatan dengan memilih alat,
 jumlah, dan rentang waktu. Sistem memeriksa ketersediaan. Jika

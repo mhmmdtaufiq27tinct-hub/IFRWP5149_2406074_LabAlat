@@ -8,7 +8,7 @@
 | SIA-R05 | Mahasiswa dapat mengunduh bukti jika memilihnya pada konfirmasi pengajuan |
 | SIA-R06 | Dosen wali dapat memproses persetujuan atau penolakan KRS |
 | SIA-R07 | Mahasiswa dan Dosen, sebagai Civitas Akademika, dapat melihat kalender akademik. |
-| SIA-R08 | Dosen Matkul dapat menginput nilai mata kuliah yang diampunya. |
+| SIA-R08 | Dosen dapat menginput nilai mata kuliah yang diampunya. |
 | SIA-R09 | Mahasiswa dapat melihat KHS untuk semester yang nilainya sudah dipublikasikan. |
 | SIA-R10 | Admin Akademik dapat mengelola data mahasiswa. |
 | SIA-R11 | Pengelolaan data mahasiswa terdiri dari tiga bentuk khusus: tambah, ubah, dan hapus data mahasiswa. |

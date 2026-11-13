@@ -4,14 +4,12 @@
 **NIM:** 2406074  
 **Kelas:** C
 
-## Ringkasan
+## SIA
 
-Skenario LAB Pertemuan 5 diterjemahkan menjadi activity diagram dengan swimlane aktor dan Sistem. Berkas sumber draw.io tersedia di `03_latihan_tools/P06/LAB/` untuk peminjaman, pengembalian, keputusan, ketersediaan, pengelolaan data, laporan, dan cetak bukti.
+Jobsheet P03–P06 menjadi acuan pengerjaan. Produk P05 SIA terdiri dari tujuh skenario use case UC07–UC13 yang mengacu pada diagram kumulatif P04. Skenario menerapkan generalisasi aktor pada UC07, generalisasi UC10 dengan perilaku pembeda UC11–UC13, dan mencantumkan realisasi SIA-CO01/CO02 pada UC08/UC09.
 
-## Aturan pemodelan
+Produk P06 adalah satu activity diagram untuk alur gabungan Input Nilai Mata Kuliah sampai Lihat KHS. Diagram memakai swimlane Dosen, Sistem, Admin Akademik, dan Mahasiswa; satu initial node dan satu activity final node; cabang decision nilai lengkap/belum lengkap dengan merge; serta fork/join untuk penerbitan KHS dan pemberitahuan hasil studi. Sumber draw.io dan ekspor PNG berada di `04_model_analisis/P06/SIA/`.
 
-Setiap diagram memiliki satu initial node dan sekurangnya satu activity final. Decision memakai guard yang mencakup semua kemungkinan dan cabangnya berakhir jelas. Perilaku include digambar sebagai action wajib. Extend cetak bukti hanya muncul pada cabang [ya, memilih cetak]. Action ditempatkan pada swimlane pelakunya; respons berada di swimlane Sistem.
+## LAB
 
-## Pemeriksaan
-
-Nama action ditelusurkan ke skenario P05. Pemeriksaan kondisi peralatan pada pengembalian adalah unsur tambahan yang diwajibkan P06 dan tidak diklaim berasal dari P03–P05. Collaboration adalah struktur pemodelan, bukan action atau swimlane.
+Skenario LAB P05 diterjemahkan menjadi activity diagram dengan swimlane aktor dan Sistem. Berkas draw.io LAB mencakup peminjaman, pengembalian, keputusan, ketersediaan, pengelolaan data, laporan, dan cetak bukti. Pemeriksaan kondisi peralatan pada pengembalian adalah unsur proses P06 LAB. Collaboration tidak menjadi action atau swimlane.

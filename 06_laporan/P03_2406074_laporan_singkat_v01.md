@@ -6,18 +6,18 @@
 
 ## Ringkasan
 
-Pertemuan 3 menyusun diagram use case dan deskripsi use case untuk dua studi kasus: Sistem Peminjaman Peralatan Laboratorium (LAB) dan Sistem Informasi Akademik (SIA). Diagram kumulatif mempertahankan fungsi Pertemuan 2 dan menambahkan pengajuan, validasi, keputusan, dan perilaku bukti bersyarat.
+Pertemuan 3 menyusun diagram use case dan deskripsi use case untuk LAB dan SIA. LAB mempertahankan fungsi P02 dan menambahkan pengajuan, validasi ketersediaan, keputusan, serta bukti opsional. Diagram SIA P03 berfokus pada pengajuan KRS; fungsi jadwal P02 tidak disalin ke diagram ini dan kembali dimasukkan dalam model kumulatif P04.
 
 ## Artefak
 
 | Kasus | Artefak utama | Cakupan |
 |:--|:--|:--|
-| LAB | `03_latihan_tools/P03/LAB/` | Use case melihat ketersediaan, mengelola peralatan, mengajukan peminjaman, memeriksa ketersediaan, mencetak bukti, memproses keputusan, dan melihat laporan. |
-| SIA | `03_latihan_tools/P03/SIA/` | Use case jadwal kuliah, pengajuan KRS, validasi, unduh bukti, keputusan dosen wali, dan pengelolaan jadwal. |
+| LAB | `03_latihan_tools/P03/LAB/` | Deskripsi lengkap untuk LAB-UC01–LAB-UC07 sesuai diagram P03. |
+| SIA | `03_latihan_tools/P03/SIA/` dan `04_model_analisis/P03/SIA/` | Deskripsi dan diagram P03 untuk SIA-UC03–SIA-UC06; use case jadwal P02 tidak disalin ke diagram ini. |
 
 ## Catatan konsistensi
 
-Pada SIA, UC01 melihat jadwal dan UC06 mengelola jadwal adalah fungsi mandiri, bukan ekstensi dari persetujuan KRS. Validasi KRS menjadi perilaku wajib dalam pengajuan; unduh bukti menjadi perilaku pilihan setelah pengajuan tersimpan. KRS yang tersimpan berstatus menunggu keputusan.
+Pada SIA, P03 berfokus pada kebutuhan KRS SIA-R03–SIA-R06 dan tidak menambahkan UC01/UC02 atau Admin Akademik dari P02 ke diagramnya. UC03 meng-include UC04 Validasi KRS; UC05 Unduh Bukti Pengajuan KRS meng-extend UC03 jika dipilih setelah pengajuan tersimpan. KRS yang tersimpan berstatus menunggu keputusan. P04 menggabungkan kembali use case jadwal dari P02 ke model kumulatif.
 
 Pada LAB, periksa ketersediaan menjadi bagian wajib dari pengajuan. Cetak bukti hanya berjalan jika mahasiswa memilihnya setelah konfirmasi. Pengajuan yang berhasil berstatus Menunggu keputusan.
 

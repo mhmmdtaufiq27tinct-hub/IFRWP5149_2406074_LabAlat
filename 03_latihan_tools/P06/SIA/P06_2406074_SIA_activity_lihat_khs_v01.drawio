@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="c787efb0048e49449cc94663e03214fc" name="SIA-UC09 Lihat KHS">
+    <mxGraphModel dx="1500" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="laneA" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;horizontal=1;collapsible=0;" value="Mahasiswa" vertex="1">
+          <mxGeometry as="geometry" x="50" y="50" width="560" height="870" />
+        </mxCell>
+        <mxCell id="laneS" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;horizontal=1;collapsible=0;" value="Sistem" vertex="1">
+          <mxGeometry as="geometry" x="640" y="50" width="800" height="870" />
+        </mxCell>
+        <mxCell id="start" parent="laneA" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry as="geometry" x="270" y="90" width="30" height="30" />
+        </mxCell>
+        <mxCell id="a" parent="laneA" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Memilih semester" vertex="1">
+          <mxGeometry as="geometry" x="100" y="120" width="260" height="70" />
+        </mxCell>
+        <mxCell id="b" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Mencari nilai yang telah dipublikasikan" vertex="1">
+          <mxGeometry as="geometry" x="160" y="230" width="260" height="70" />
+        </mxCell>
+        <mxCell id="d" parent="laneS" style="rhombus;whiteSpace=wrap;html=1;" value="Ada nilai terpublikasi?" vertex="1">
+          <mxGeometry as="geometry" x="220" y="350" width="160" height="90" />
+        </mxCell>
+        <mxCell id="ok" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Menampilkan KHS semester terpilih" vertex="1">
+          <mxGeometry as="geometry" x="80" y="480" width="260" height="70" />
+        </mxCell>
+        <mxCell id="no" parent="laneS" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;" value="Menampilkan informasi KHS belum tersedia" vertex="1">
+          <mxGeometry as="geometry" x="390" y="480" width="260" height="70" />
+        </mxCell>
+        <mxCell id="endok" parent="laneS" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry as="geometry" x="270" y="850" width="36" height="36" />
+        </mxCell>
+        <mxCell id="endno" parent="laneS" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry as="geometry" x="520" y="850" width="36" height="36" />
+        </mxCell>
+        <mxCell id="e0" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="start" target="a">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e1" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="a" target="b">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e2" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="b" target="d">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e3" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[ada]" edge="1" source="d" target="ok">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e4" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="[belum ada]" edge="1" source="d" target="no">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e5" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="ok" target="endok">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+        <mxCell id="e6" parent="1" style="endArrow=open;endFill=1;endSize=6;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" value="" edge="1" source="no" target="endno">
+          <mxGeometry as="geometry" relative="1" width="50" height="50" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
